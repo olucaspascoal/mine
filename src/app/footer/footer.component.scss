@@ -1,0 +1,15 @@
+.footer{
+    color: #FFF;   
+    display: flex;
+    margin: auto;
+    width: 70%;
+    
+    justify-content: space-between;
+    &-item{
+        text-align: center;
+        p{
+            font-size: .8rem;
+            font-family: 'Kufam', sans-serif;
+        }
+    }
+}

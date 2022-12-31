@@ -1,0 +1,28 @@
+.header{
+    text-align: center;
+
+    &-menu{
+        width: 40%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        a{
+            color: #FFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Kufam', sans-serif;
+            &:hover{
+                color: #33E29A;
+            }
+        }
+        .active{
+            color: #33E29A;
+            border-radius: 6px;
+            padding: .7rem 1rem;
+            background: rgba(255, 255, 255, 0.16);
+        }
+    }
+}

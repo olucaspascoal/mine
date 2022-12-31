@@ -1,0 +1,26 @@
+.main{
+    width: 30%;
+    margin: 2rem auto;
+    height: auto;
+    border-radius: 12px;
+    backdrop-filter: blur(2.5px);
+    background: rgba(38, 38, 38, 0.8);
+    border: 1px solid rgba(115, 115, 115, 0.5);
+
+    &-form{
+        padding: 1rem;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        img{
+            margin: 1rem auto;
+            width: fit-content;
+        }
+        &-item{
+            display: flex;
+            margin-bottom: 2rem;
+            flex-direction: column;
+        }
+    }
+}

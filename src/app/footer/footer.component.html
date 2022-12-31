@@ -1,0 +1,8 @@
+<footer class="footer">
+    <ng-container *ngFor="let item of listaItens">
+        <div class="footer-item">
+            <img [src]="item.icon" alt="Icone">
+            <p> {{item.desc}} </p>
+        </div>
+    </ng-container>
+</footer>
