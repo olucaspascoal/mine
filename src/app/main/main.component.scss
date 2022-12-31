@@ -1,26 +1,60 @@
 .main{
     width: 30%;
-    margin: 2rem auto;
     height: auto;
+    margin: 2rem auto;
     border-radius: 12px;
     backdrop-filter: blur(2.5px);
+    font-family: 'Kufam', sans-serif;
     background: rgba(38, 38, 38, 0.8);
     border: 1px solid rgba(115, 115, 115, 0.5);
-
     &-form{
         padding: 1rem;
         color: #FFF;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        flex-direction: column;
         img{
             margin: 1rem auto;
             width: fit-content;
+        }
+        input[type=text], input[type=password]{
+            outline: none;
+            padding: 1rem;
+            color: #BAACAC;
+            margin-top: .5rem;
+            border-radius: 4px;
+            box-sizing: border-box;
+            border: 2px solid #414141;
+            background-color: #262626;
+        }
+        input[type=checkbox]{
+            background-color: red;
+        }
+        input:checked ~ .checkmark {
+            background-color: yellow;
+          }
+        input[type=button]{
+            border: none;
+            color: #FFF;
+            cursor: pointer;
+            margin: 1rem 0;
+            padding: .7rem 0;
+            border-radius: 6px;
+            text-decoration: none;
+            background: linear-gradient(90.89deg, #22AE75 0%, #00874F 52.36%);
+            box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.05), 0px 2px 0px #FFFFFF, inset 0px 2px 0px rgba(255, 255, 255, 0.4);
         }
         &-item{
             display: flex;
             margin-bottom: 2rem;
             flex-direction: column;
+        }
+        &-esqueceu{
+            color: #33E29A;
+            text-align: center;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
